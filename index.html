@@ -1,1 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PureCool - Sustainable Cooling Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #498CFF;
+            --secondary-blue: #78AAFF;
+            --light-blue: #E6F2FF;
+            --black: #000000;
+            --white: #FFFFFF;
+            --gray: #F5F5F5;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .top-header {
+            background-color: var(--light-blue);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: var(--gray);
+            border-radius: 25px;
+            padding: 8px 15px;
+            width: 250px;
+        }
+
+        .search-bar input {
+            border: none;
+            background: none;
+            width: 100%;
+            margin-left: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            margin-top: 15px;
+            justify-content: center;
+            border-top: 1px solid var(--light-blue);
+            padding: 15px 0;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu li a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 150px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .hero-image {
+            flex: 1;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Product Categories */
+        .product-categories {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .category-item {
+            background-color: var(--light-blue);
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+
+        .category-item img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            margin-top: 80px;
+            background-color: var(--secondary-blue);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 30px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: var(--white);
+            font-size: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .hero, .category-grid {
+                flex-direction: column;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            Sustainable Cooling Solutions - Eco-Friendly Technology
+        </div>
+        <div class="container">
+            <div class="main-header">
+                <div class="logo">PureCool</div>
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search products">
+                    </div>
+                    <div class="user-actions">
+                        <i class="fas fa-user"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="container hero">
+            <div class="hero-image">
+                <img src="/api/placeholder/600/400" alt="PureCool Solution">
+            </div>
+            <div class="hero-content">
+                <br><br><br>
+                <h1>Revolutionize Cooling</h1>
+                <p>Discover cutting-edge sustainable cooling technologies that transform how we think about air conditioning and refrigeration. Our innovative solutions reduce energy consumption and carbon footprint.</p>
+                <a href="#contact" class="cta-button">Explore Solutions</a>
+            </div>
+        </section>
+
+        <section class="container product-categories">
+            <h2>Our Solutions</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <img src="/api/placeholder/100/100" alt="Residential Cooling">
+                    <h3>Residential Cooling</h3>
+                    <p>Eco-friendly home cooling systems</p>
+                </div>
+                <div class="category-item">
+                    <img src="/api/placeholder/100/100" alt="Commercial Cooling">
+                    <h3>Commercial Cooling</h3>
+                    <p>Advanced solutions for businesses</p>
+                </div>
+                <div class="category-item">
+                    <img src="/api/placeholder/100/100" alt="Industrial Refrigeration">
+                    <h3>Industrial Refrigeration</h3>
+                    <p>Sustainable large-scale cooling</p>
+                </div>
+                <div class="category-item">
+                    <img src="/api/placeholder/100/100" alt="Green Technology">
+                    <h3>Green Technology</h3>
+                    <p>Innovative eco-cooling solutions</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact PureCool</h2>
+                <p>Mr. Dhruv Chhabra (CEO)</p>
+                <p>Email: dhruv@purecool.co.in</p>
+                <p>Phone: 9871059983</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/purecool.co.in" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dhruv-chhabra-1b42b1317/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
