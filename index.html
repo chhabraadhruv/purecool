@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> PureCool - Sustainable Cooling Solutions</title>
+    <title> purecool - Sustainable Cooling Solutions</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -343,97 +343,272 @@
             </div>
         </section>
 
-        <section class="solution-categories container">
-            <h2 class="text-center mb-5">Our Comprehensive Solutions</h2>
-            <div class="category-grid">
-                <div class="category-card">
-                    <img src="residential-icon.png" alt="Residential">
-                    <h3>Residential Cooling</h3>
-                    <p>Smart, energy-efficient home cooling systems</p>
-                </div>
-                <div class="category-card">
-                    <img src="commercial-icon.png" alt="Commercial">
-                    <h3>Commercial Solutions</h3>
-                    <p>Advanced cooling for offices and businesses</p>
-                </div>
-                <div class="category-card">
-                    <img src="industrial-icon.png" alt="Industrial">
-                    <h3>Industrial Refrigeration</h3>
-                    <p>Large-scale sustainable cooling technologies</p>
-                </div>
-                <div class="category-card">
-                    <img src="green-tech-icon.png" alt="Green Tech">
-                    <h3>Green Technology</h3>
-                    <p>Innovative eco-friendly cooling solutions</p>
-                </div>
-            </div>
-        </section>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureCool - Sustainable Cooling Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #0070E0;
+            --secondary-blue: #4BA3FF;
+            --accent-green: #2ECC71;
+            --dark-blue: #003366;
+            --light-gray: #F8F9FA;
+            --text-gray: #6C757D;
+            --white: #FFFFFF;
+            --black: #121212;
+        }
 
-        <section class="technology-showcase container">
-            <h2 class="text-center mb-5">Our Advanced Technologies</h2>
-            <div class="tech-grid">
-                <div class="tech-card">
-                    <h3>AI-Driven Efficiency</h3>
-                    <p>Machine learning algorithms optimize cooling performance</p>
-                </div>
-                <div class="tech-card">
-                    <h3>Zero Carbon Emission</h3>
-                    <p>Revolutionary cooling systems with minimal environmental impact</p>
-                </div>
-                <div class="tech-card">
-                    <h3>Smart Temperature Control</h3>
-                    <p>Real-time monitoring and adaptive cooling technologies</p>
-                </div>
-            </div>
-        </section>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
 
-        <section class="testimonials">
-            <div class="container">
-                <h2>What Our Clients Say</h2>
-                <div class="testimonial-grid">
-                    <div class="testimonial-card">
-                        <p>"PureCool transformed our industrial cooling, reducing energy costs by 40%."</p>
-                        <h4>- Corporate Client</h4>
-                    </div>
-                    <div class="testimonial-card">
-                        <p>"Incredible residential solution that's both eco-friendly and cost-effective."</p>
-                        <h4>- Residential Customer</h4>
-                    </div>
-                    <div class="testimonial-card">
-                        <p>"The most innovative cooling technology I've seen in decades."</p>
-                        <h4>- Industry Expert</h4>
+        body {
+            background-color: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+
+        .top-notification {
+            background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
+            color: var(--white);
+            text-align: center;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+
+        .main-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+        }
+
+        .search-cart-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: var(--light-gray);
+            border-radius: 25px;
+            padding: 8px 15px;
+        }
+
+        .search-bar input {
+            border: none;
+            background: none;
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            margin-top: 120px;
+            padding: 80px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .primary-button {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        /* Customer Reviews */
+        .reviews-section {
+            background-color: var(--light-gray);
+            padding: 80px 0;
+        }
+
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .review-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-card p {
+            font-size: 16px;
+            color: var(--text-gray);
+        }
+
+        .review-author {
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* Contact Us */
+        .contact-section {
+            background-color: var(--white);
+            padding: 80px 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid var(--light-gray);
+            border-radius: 8px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 1024px) {
+            .reviews-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-notification">🌍 Sustainable Cooling Solutions</div>
+        <div class="container">
+            <nav class="main-navigation">
+                <div class="logo">purecool</div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="search-cart-section">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search solutions">
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </nav>
+        </div>
+    </header>
 
-    <footer>
-        <div class="container footer-grid">
-            <div>
-                <h4>PureCool</h4>
-                <p>Revolutionizing cooling technologies for a sustainable future.</p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Eco-Friendly Cooling for a Better Tomorrow</h1>
+                <p>Discover sustainable alternatives to traditional air conditioning.</p>
+                <a href="#contact" class="primary-button">Get Started</a>
             </div>
-            <div>
-                <h4>Quick Links</h4>
-                <a href="#">Home</a>
-                <a href="#">Solutions</a>
-                <a href="#">Technology</a>
+            <div class="hero-image">
+                <img src="hero-image.jpg" alt="Hero Image">
             </div>
-            <div>
-                <h4>Contact Us</h4>
-                <p>Email: dhruv@purecool.co.in</p>
-                <p>Phone: +91 9871059983</p>
-            </div>
-            <div>
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <p>"PureCool changed the way we think about cooling. Highly recommended!"</p>
+                    <div class="review-author">- Jane Doe</div>
+                </div>
+                <div class="review-card">
+                    <p>"Great service and innovative solutions. My energy bills have reduced significantly."</p>
+                    <div class="review-author">- John Smith</div>
+                </div>
+                <div class="review-card">
+                    <p>"Eco-friendly and efficient! It’s a win-win for us and the planet."</p>
+                    <div class="review-author">- Emily Taylor</div>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
