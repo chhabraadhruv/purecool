@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> PureCool - Sustainable Cooling Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>PureCool - Sustainable Cooling Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk&family=Satoshi:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -20,7 +20,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Satoshi', sans-serif;
         }
 
         body {
@@ -61,8 +61,9 @@
         }
 
         .logo {
+            font-family: 'Satoshi', sans-serif;
             font-size: 36px;
-            font-weight: 700;
+            font-weight: 820;
             color: var(--primary-blue);
         }
 
@@ -132,7 +133,8 @@
         }
 
         .hero h1 {
-            font-size: 36px;
+            font-family: 'Cabinet Grotesk', sans-serif;
+            font-size: 40px;
             color: var(--primary-blue);
             margin-bottom: 20px;
         }
@@ -186,6 +188,15 @@
             margin-bottom: 20px;
         }
 
+        .category-item h3 {
+            font-family: 'Cabinet Grotesk', sans-serif;
+            font-weight: 600;
+        }
+
+        .category-item p {
+            color: #666;
+        }
+
         /* Contact Section */
         .contact {
             margin-top: 80px;
@@ -197,6 +208,12 @@
 
         .contact h2 {
             margin-bottom: 30px;
+            font-family: 'Cabinet Grotesk', sans-serif;
+            font-weight: 700;
+        }
+
+        .contact p {
+            font-family: 'Satoshi', sans-serif;
         }
 
         .social-icons {
@@ -232,39 +249,43 @@
         </div>
         <div class="container">
             <div class="main-header">
-                <img src="purecool.png" alt="logo" align = "center" width="110/1.2" height="102/1.2">
-  
+                <div class="logo">purecool</div>
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <a href="#contact" class="cta-button">Contact Us</a>
                 </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#technology">Technology</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section class="container hero">
+        <section id="home" class="container hero">
             <div class="hero-image">
-                <br><br><br><br>
-                <img src="air.gif" loading="lazy" alt="PureCool Solution" width = "520">
+                <img src="air.gif" loading="lazy" alt="PureCool Solution" width="520">
             </div>
             <div class="hero-content">
-                <br><br><br><br><br>
-                <h1>Revolutionize Cooling</h1>
+                <br><br><br><h1>Revolutionize Cooling</h1>
                 <p>Discover cutting-edge sustainable cooling technologies that transform how we think about air conditioning and refrigeration. Our innovative solutions reduce energy consumption and carbon footprint.</p>
                 <a href="#contact" class="cta-button">Explore Solutions</a>
             </div>
         </section>
 
-        <section class="container product-categories">
+        <section id="solutions" class="container product-categories">
             <h2>Our Solutions</h2>
             <div class="category-grid">
                 <div class="category-item">
-                    <img src="/api/placeholder/100/100"  alt="Residential Cooling">
+                    <img src="/api/placeholder/100/100" alt="Residential Cooling">
                     <h3>Residential Cooling</h3>
                     <p>Eco-friendly home cooling systems</p>
                 </div>
