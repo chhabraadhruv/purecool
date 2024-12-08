@@ -20,7 +20,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Satoshi', sans-serif;
+            font-family: 'Satoshi', Arial, sans-serif; /* Added fallback font */
         }
 
         body {
@@ -61,7 +61,7 @@
         }
 
         .logo {
-            font-family: 'Satoshi', sans-serif;
+            font-family: 'Satoshi', Arial, sans-serif; /* Added fallback font */
             font-size: 36px;
             font-weight: 820;
             color: var(--primary-blue);
@@ -133,7 +133,7 @@
         }
 
         .hero h1 {
-            font-family: 'Cabinet Grotesk', sans-serif;
+            font-family: 'Cabinet Grotesk', Arial, sans-serif; /* Added fallback font */
             font-size: 40px;
             color: var(--primary-blue);
             margin-bottom: 20px;
@@ -189,7 +189,7 @@
         }
 
         .category-item h3 {
-            font-family: 'Cabinet Grotesk', sans-serif;
+            font-family: 'Cabinet Grotesk', Arial, sans-serif; /* Added fallback font */
             font-weight: 600;
         }
 
@@ -208,12 +208,12 @@
 
         .contact h2 {
             margin-bottom: 30px;
-            font-family: 'Cabinet Grotesk', sans-serif;
+            font-family: 'Cabinet Grotesk', Arial, sans-serif; /* Added fallback font */
             font-weight: 700;
         }
 
         .contact p {
-            font-family: 'Satoshi', sans-serif;
+            font-family: 'Satoshi', Arial, sans-serif;
         }
 
         .social-icons {
@@ -235,8 +235,12 @@
 
         /* Responsive Design */
         @media screen and (max-width: 768px) {
-            .hero, .category-grid {
+            .hero {
                 flex-direction: column;
+                text-align: center;
+            }
+
+            .category-grid {
                 grid-template-columns: 1fr;
             }
         }
