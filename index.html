@@ -20,7 +20,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Satoshi', Arial, sans-serif; /* Added fallback font */
+            font-family: 'Satoshi', Arial, sans-serif;
         }
 
         body {
@@ -35,7 +35,6 @@
             padding: 0 20px;
         }
 
-        /* Navigation Styles */
         header {
             position: fixed;
             top: 0;
@@ -61,7 +60,6 @@
         }
 
         .logo {
-            font-family: 'Satoshi', Arial, sans-serif; /* Added fallback font */
             font-size: 36px;
             font-weight: 820;
             color: var(--primary-blue);
@@ -110,7 +108,6 @@
             color: var(--primary-blue);
         }
 
-        /* Hero Section */
         .hero {
             margin-top: 150px;
             display: flex;
@@ -133,7 +130,6 @@
         }
 
         .hero h1 {
-            font-family: 'Cabinet Grotesk', Arial, sans-serif; /* Added fallback font */
             font-size: 40px;
             color: var(--primary-blue);
             margin-bottom: 20px;
@@ -159,7 +155,6 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
-        /* Product Categories */
         .product-categories {
             margin-top: 80px;
             text-align: center;
@@ -167,7 +162,7 @@
 
         .category-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             margin-top: 40px;
         }
@@ -189,7 +184,6 @@
         }
 
         .category-item h3 {
-            font-family: 'Cabinet Grotesk', Arial, sans-serif; /* Added fallback font */
             font-weight: 600;
         }
 
@@ -197,7 +191,6 @@
             color: #666;
         }
 
-        /* Contact Section */
         .contact {
             margin-top: 80px;
             background-color: var(--secondary-blue);
@@ -208,12 +201,11 @@
 
         .contact h2 {
             margin-bottom: 30px;
-            font-family: 'Cabinet Grotesk', Arial, sans-serif; /* Added fallback font */
             font-weight: 700;
         }
 
         .contact p {
-            font-family: 'Satoshi', Arial, sans-serif;
+            margin-bottom: 10px;
         }
 
         .social-icons {
@@ -233,15 +225,10 @@
             color: var(--primary-blue);
         }
 
-        /* Responsive Design */
         @media screen and (max-width: 768px) {
             .hero {
                 flex-direction: column;
                 text-align: center;
-            }
-
-            .category-grid {
-                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -276,11 +263,10 @@
     <main>
         <section id="home" class="container hero">
             <div class="hero-image">
-                <br><br><br>
-                <img src="air.gif" loading="lazy" alt="PureCool Solution" width="520">
+                <img src="air.gif" alt="PureCool Solution" loading="lazy">
             </div>
             <div class="hero-content">
-                <br><br><br><h1>Revolutionize Cooling</h1>
+                <br><br><br><br><h1>Revolutionize Cooling</h1>
                 <p>Discover cutting-edge sustainable cooling technologies that transform how we think about air conditioning and refrigeration. Our innovative solutions reduce energy consumption and carbon footprint.</p>
                 <a href="#contact" class="cta-button">Explore Solutions</a>
             </div>
